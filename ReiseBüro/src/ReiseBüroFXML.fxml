@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="702.0" prefWidth="1041.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ReiseBüroFXMLController">
+   <children>
+      <Text layoutX="317.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reisebüro" wrappingWidth="514.8583984375">
+         <font>
+            <Font name="Cooper Black" size="81.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="auto" layoutX="243.0" layoutY="152.0" mnemonicParsing="false" text="Auto" />
+      <CheckBox fx:id="flug" layoutX="474.0" layoutY="152.0" mnemonicParsing="false" text="Flugzeug" />
+      <CheckBox fx:id="zug" layoutX="768.0" layoutY="152.0" mnemonicParsing="false" text="Zug" />
+      <Text layoutX="436.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mit was Reisen Sie?" />
+      <Text layoutX="369.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wie viel KM müssen sie Hinterlegen:" />
+      <TextField fx:id="km" layoutX="407.0" layoutY="233.0" />
+      <Text layoutX="244.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Von:" />
+      <Text layoutX="730.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nach:" />
+      <TextField fx:id="ab" layoutX="166.0" layoutY="312.0" />
+      <TextField fx:id="nach" layoutX="656.0" layoutY="312.0" />
+      <Label fx:id="label" layoutX="256.0" layoutY="529.0" />
+      <Text layoutX="403.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ihre Reise und Benötigte Zeit:" />
+      <ImageView fitHeight="59.0" fitWidth="114.0" layoutX="101.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/mercedes_PNG80135.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="151.0" layoutX="350.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/plane_PNG5219.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="67.0" fitWidth="146.0" layoutX="628.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/trian_PNG101343.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="check" layoutX="450.0" layoutY="351.0" mnemonicParsing="false" onAction="#rechner" text="CHECK-OUT" />
+   </children>
+</AnchorPane>
